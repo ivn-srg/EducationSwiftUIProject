@@ -6,10 +6,10 @@ This is my first SwiftUI app! I made it for educational purposes
 
 ## Экран приложения
 
-![Скриншот экрана](EduSwiftUIProj/Resources/screenshot1.png)
-![Скриншот экрана](EduSwiftUIProj/Resources/screenshot2.png)
-![Скриншот экрана](EduSwiftUIProj/Resources/screenshot3.png)
-![Скриншот экрана](EduSwiftUIProj/Resources/screenshot4.png)
+![Скриншот экрана](EducationSwiftUIProject/Resources/screenshot1.png)
+![Скриншот экрана](EducationSwiftUIProject/Resources/screenshot2.png)
+![Скриншот экрана](EducationSwiftUIProject/Resources/screenshot3.png)
+![Скриншот экрана](EducationSwiftUIProject/Resources/screenshot4.png)
 
 ## Требования
 
