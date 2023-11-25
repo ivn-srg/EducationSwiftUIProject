@@ -12,6 +12,21 @@
 		93781AEB2B124DAE00053414 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93781AEA2B124DAE00053414 /* Assets.xcassets */; };
 		93781AEE2B124DAE00053414 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93781AED2B124DAE00053414 /* Preview Assets.xcassets */; };
 		93781AF52B124E5100053414 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 93781AF42B124E5100053414 /* README.md */; };
+		93781B0A2B124F5700053414 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 93781AF72B124F5700053414 /* Localizable.xcstrings */; };
+		93781B0B2B124F5700053414 /* ColorsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93781AF82B124F5700053414 /* ColorsExtensions.swift */; };
+		93781B0C2B124F5700053414 /* ImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93781AF92B124F5700053414 /* ImageExtensions.swift */; };
+		93781B0D2B124F5700053414 /* screenshot1.png in Resources */ = {isa = PBXBuildFile; fileRef = 93781AFA2B124F5700053414 /* screenshot1.png */; };
+		93781B0E2B124F5700053414 /* screenshot2.png in Resources */ = {isa = PBXBuildFile; fileRef = 93781AFB2B124F5700053414 /* screenshot2.png */; };
+		93781B0F2B124F5700053414 /* screenshot3.png in Resources */ = {isa = PBXBuildFile; fileRef = 93781AFC2B124F5700053414 /* screenshot3.png */; };
+		93781B102B124F5700053414 /* screenshot4.png in Resources */ = {isa = PBXBuildFile; fileRef = 93781AFD2B124F5700053414 /* screenshot4.png */; };
+		93781B112B124F5700053414 /* FontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93781AFF2B124F5700053414 /* FontExtensions.swift */; };
+		93781B122B124F5700053414 /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93781B012B124F5700053414 /* Nunito-Regular.ttf */; };
+		93781B132B124F5700053414 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93781B022B124F5700053414 /* Nunito-Bold.ttf */; };
+		93781B142B124F5700053414 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93781B042B124F5700053414 /* Poppins-Regular.ttf */; };
+		93781B152B124F5700053414 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93781B052B124F5700053414 /* Poppins-Bold.ttf */; };
+		93781B162B124F5700053414 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93781B072B124F5700053414 /* Chat.swift */; };
+		93781B172B124F5700053414 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93781B082B124F5700053414 /* Comment.swift */; };
+		93781B182B124F5700053414 /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93781B092B124F5700053414 /* Doctor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +36,21 @@
 		93781AEA2B124DAE00053414 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93781AED2B124DAE00053414 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		93781AF42B124E5100053414 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		93781AF72B124F5700053414 /* Localizable.xcstrings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		93781AF82B124F5700053414 /* ColorsExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsExtensions.swift; sourceTree = "<group>"; };
+		93781AF92B124F5700053414 /* ImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageExtensions.swift; sourceTree = "<group>"; };
+		93781AFA2B124F5700053414 /* screenshot1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot1.png; sourceTree = "<group>"; };
+		93781AFB2B124F5700053414 /* screenshot2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot2.png; sourceTree = "<group>"; };
+		93781AFC2B124F5700053414 /* screenshot3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot3.png; sourceTree = "<group>"; };
+		93781AFD2B124F5700053414 /* screenshot4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot4.png; sourceTree = "<group>"; };
+		93781AFF2B124F5700053414 /* FontExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontExtensions.swift; sourceTree = "<group>"; };
+		93781B012B124F5700053414 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
+		93781B022B124F5700053414 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		93781B042B124F5700053414 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		93781B052B124F5700053414 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		93781B072B124F5700053414 /* Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		93781B082B124F5700053414 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		93781B092B124F5700053414 /* Doctor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +84,9 @@
 		93781AE52B124DAC00053414 /* EducationSwiftUIProject */ = {
 			isa = PBXGroup;
 			children = (
+				93781AFE2B124F5700053414 /* Fonts */,
+				93781B062B124F5700053414 /* Model */,
+				93781AF62B124F5700053414 /* Resources */,
 				93781AE62B124DAC00053414 /* EducationSwiftUIProjectApp.swift */,
 				93781AE82B124DAC00053414 /* ContentView.swift */,
 				93781AEA2B124DAE00053414 /* Assets.xcassets */,
@@ -68,6 +101,58 @@
 				93781AED2B124DAE00053414 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		93781AF62B124F5700053414 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				93781AF72B124F5700053414 /* Localizable.xcstrings */,
+				93781AF82B124F5700053414 /* ColorsExtensions.swift */,
+				93781AF92B124F5700053414 /* ImageExtensions.swift */,
+				93781AFA2B124F5700053414 /* screenshot1.png */,
+				93781AFB2B124F5700053414 /* screenshot2.png */,
+				93781AFC2B124F5700053414 /* screenshot3.png */,
+				93781AFD2B124F5700053414 /* screenshot4.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		93781AFE2B124F5700053414 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				93781AFF2B124F5700053414 /* FontExtensions.swift */,
+				93781B002B124F5700053414 /* Nunito */,
+				93781B032B124F5700053414 /* Poppins */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		93781B002B124F5700053414 /* Nunito */ = {
+			isa = PBXGroup;
+			children = (
+				93781B012B124F5700053414 /* Nunito-Regular.ttf */,
+				93781B022B124F5700053414 /* Nunito-Bold.ttf */,
+			);
+			path = Nunito;
+			sourceTree = "<group>";
+		};
+		93781B032B124F5700053414 /* Poppins */ = {
+			isa = PBXGroup;
+			children = (
+				93781B042B124F5700053414 /* Poppins-Regular.ttf */,
+				93781B052B124F5700053414 /* Poppins-Bold.ttf */,
+			);
+			path = Poppins;
+			sourceTree = "<group>";
+		};
+		93781B062B124F5700053414 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				93781B072B124F5700053414 /* Chat.swift */,
+				93781B082B124F5700053414 /* Comment.swift */,
+				93781B092B124F5700053414 /* Doctor.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +213,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93781B0F2B124F5700053414 /* screenshot3.png in Resources */,
+				93781B0E2B124F5700053414 /* screenshot2.png in Resources */,
 				93781AF52B124E5100053414 /* README.md in Resources */,
 				93781AEE2B124DAE00053414 /* Preview Assets.xcassets in Resources */,
+				93781B102B124F5700053414 /* screenshot4.png in Resources */,
+				93781B0A2B124F5700053414 /* Localizable.xcstrings in Resources */,
+				93781B132B124F5700053414 /* Nunito-Bold.ttf in Resources */,
+				93781B152B124F5700053414 /* Poppins-Bold.ttf in Resources */,
+				93781B122B124F5700053414 /* Nunito-Regular.ttf in Resources */,
+				93781B142B124F5700053414 /* Poppins-Regular.ttf in Resources */,
 				93781AEB2B124DAE00053414 /* Assets.xcassets in Resources */,
+				93781B0D2B124F5700053414 /* screenshot1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +236,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				93781AE92B124DAC00053414 /* ContentView.swift in Sources */,
+				93781B162B124F5700053414 /* Chat.swift in Sources */,
+				93781B182B124F5700053414 /* Doctor.swift in Sources */,
 				93781AE72B124DAC00053414 /* EducationSwiftUIProjectApp.swift in Sources */,
+				93781B172B124F5700053414 /* Comment.swift in Sources */,
+				93781B112B124F5700053414 /* FontExtensions.swift in Sources */,
+				93781B0B2B124F5700053414 /* ColorsExtensions.swift in Sources */,
+				93781B0C2B124F5700053414 /* ImageExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
