@@ -9,7 +9,7 @@ import SwiftUI
 
 struct GeneralDocView: View {
     @State private var isModalPresented = false
-    var generalDoc = listOfDoctors.filter({$0.isGeneralDoc})[0]
+    var generalDoc = Doctor.listOfDoctors.filter({$0.isGeneralDoc})[0]
     
     var body: some View {
         VStack(alignment: .center, spacing: 16) {

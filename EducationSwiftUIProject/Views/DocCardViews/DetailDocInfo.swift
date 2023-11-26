@@ -61,7 +61,6 @@ struct DetailDocInfo: View {
                 .frame(alignment: .top)
                 .frame(maxWidth: .infinity)
                 .background(Color.customBlue)
-//                .cornerRadius(20)
                 
                 VStack(alignment: .leading, spacing: 12) {
                     HStack(alignment: .center, spacing: 8) {
@@ -103,13 +102,11 @@ struct DetailDocInfo: View {
                     }
                     .padding()
                     
-//                    Spacer()
-                    
                     Button(action: {
                         
                     }) {
                         NavigationLink("Chat", destination: ChatDetailView(
-                            chat: chatData.filter({$0.doctor.fullName == doctor.fullName})[0]
+                            chat: Chat.chatData.filter({$0.doctor.fullName == doctor.fullName})[0]
                             )
                         ).padding()
                             .frame(width: 80)
@@ -133,5 +130,5 @@ struct DetailDocInfo: View {
 }
 
 #Preview {
-    DetailDocInfo(isModalPresented: .constant(false), showAlert: false, doctor: listOfDoctors[0])
+    DetailDocInfo(isModalPresented: .constant(false), showAlert: false, doctor: Doctor.listOfDoctors[0])
 }

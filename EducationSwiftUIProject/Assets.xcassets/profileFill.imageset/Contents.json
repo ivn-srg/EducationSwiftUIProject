@@ -6,10 +6,12 @@
       "scale" : "1x"
     },
     {
+      "filename" : "profileFill@2x.svg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "profileFill@3x.svg",
       "idiom" : "universal",
       "scale" : "3x"
     }

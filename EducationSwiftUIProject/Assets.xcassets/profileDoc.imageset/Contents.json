@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "profile-add.svg",
+      "filename" : "profileDoc.svg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "profileDoc@2x.svg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "profileDoc@3x.svg",
       "idiom" : "universal",
       "scale" : "3x"
     }

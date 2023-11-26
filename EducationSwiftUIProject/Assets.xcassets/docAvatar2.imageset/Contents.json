@@ -1,15 +1,17 @@
 {
   "images" : [
     {
+      "filename" : "docAvatar2.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "docAvatar2@2x.png",
+      "filename" : "docAvatar2@2x — копия.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "docAvatar2@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

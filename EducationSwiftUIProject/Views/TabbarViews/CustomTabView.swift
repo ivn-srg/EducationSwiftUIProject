@@ -7,6 +7,13 @@
 
 import SwiftUI
 
+let tabbarItems:[(image: String, title: String)] = [
+    ("home", NSLocalizedString("tabbarItemText1", comment: "")),
+    ("calendar", NSLocalizedString("tabbarItemText2", comment: "")),
+    ("message", NSLocalizedString("tabbarItemText3", comment: "")),
+    ("profile", NSLocalizedString("tabbarItemText4", comment: ""))
+]
+
 struct CustomTabView: View {
     @Binding var tabSelection: Int
     @Namespace private var animatedNamespace
@@ -14,16 +21,16 @@ struct CustomTabView: View {
     var body: some View {
         ZStack {
             HStack(alignment: .bottom, spacing: 35) {
-                ForEach(0..<tabbarItems.count) { index in
+                ForEach(Array(tabbarItems.enumerated()), id: \.offset) { index, element in
                     Button {
                         tabSelection = index + 1
                     } label: {
                         if index + 1 == tabSelection {
                             HStack(alignment: .center, spacing: 8) {
-                                Image("\(tabbarItems[index].image)Fill")
+                                Image("\(element.image)Fill")
                                     .frame(width: 24, height: 24, alignment: .center)
                                 
-                                Text(tabbarItems[index].title)
+                                Text(element.title)
                                     .font(.secondFontBold(size: 14))
                                     .foregroundStyle(Color.customLightBlue)
                             }
@@ -33,15 +40,13 @@ struct CustomTabView: View {
                             .matchedGeometryEffect(id: "SelectedTabId", in: animatedNamespace)
                         } else {
                             HStack(alignment: .center, spacing: 8) {
-                                Image(tabbarItems[index].image)
+                                Image(element.image)
                                     .frame(width: 24, height: 24, alignment: .center)
                             }
                             .padding(12)
                             .cornerRadius(12)
                         }
-                        
                     }
-
                 }
             }
             .frame(maxWidth: .infinity)
@@ -49,7 +54,6 @@ struct CustomTabView: View {
         }
         .offset(y: 25)
         .frame(height: 80)
-//        .padding(.horizontal, 16)
         .padding(.top, 10)
     }
 }

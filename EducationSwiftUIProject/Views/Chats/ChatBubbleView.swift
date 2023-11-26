@@ -32,24 +32,20 @@ struct ChatBubbleView: View {
                             .foregroundColor(.white)
                             .frame(alignment: .trailing)
                     }
-                    
                 }
                 .padding()
             }
             .frame(maxWidth: 300)
 
             if !isMyMessage {
-                Spacer() // Добавляем пустое пространство справа, если это не мое сообщение
+                Spacer()
             }
         }
         .padding(.horizontal, 5)
-//        .padding(.vertical, isMyMessage ? 0 : 15)
     }
 }
 
 #Preview {
-//    ChatBubbleView(message: "String", isMyMessage: true)
-//    ChatBubbleView(message: "StringStringStringStringStringStringStringStringStringStringString\nStringStringStringStringStringStringStringStringStringStringStringStringStringStringStringString", isMyMessage: false)
     
-    ChatDetailView(chat: chatData[0])
+    ChatDetailView(chat: Chat.chatData[0])
 }

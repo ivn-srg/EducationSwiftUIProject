@@ -22,7 +22,6 @@ struct ChatDetailView: View {
                 sentTime: Comment.formattedCurrentTime())
                                     )
             messageText = ""
-            // обновление текущего экрана чата для появления нового коммента
             refreshID = UUID()
         }
     }
@@ -42,45 +41,36 @@ struct ChatDetailView: View {
             // Отображение сообщений
             ScrollView {
                 VStack {
-                    ForEach(0..<chat.listOfComments.count) { index in
-                        let comment = chat.listOfComments[index]
-                        
+                    ForEach(Array(chat.listOfComments.enumerated()), id: \.offset) { index, element in
                         ChatBubbleView(
-                            message: comment.text,
-                            isMyMessage: comment.author == .user ? true : false,
-                            sentTime: comment.sentTime
+                            message: element.text,
+                            isMyMessage: element.author == .user ? true : false,
+                            sentTime: element.sentTime
                         )
                         .padding(.bottom, calculatePadding(
                             index: index,
-                            comment: comment)
+                            comment: element)
                         )
-                        
                     }
                 }
                 .padding(.vertical, 20)
             }
-//            .padding(.horizontal, 10)
             
-            // Поле ввода текста
             HStack(alignment: .center, spacing:0) {
-                
-//                ScrollView {
-                    TextEditor(text: $messageText)
-                        .frame(maxHeight: 100)
-                        .lineLimit(nil)
-                        .foregroundColor(.primary)
-                        .background(Color.secondary.opacity(0.1))
-                        .frame(height: 50)
-                        .cornerRadius(8)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 8)
-                                .stroke(Color.secondary, lineWidth: 1)
-                        )
-//                }
+                TextEditor(text: $messageText)
+                    .frame(maxHeight: 100)
+                    .lineLimit(nil)
+                    .foregroundColor(.primary)
+                    .background(Color.secondary.opacity(0.1))
+                    .frame(height: 50)
+                    .cornerRadius(8)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 8)
+                            .stroke(Color.secondary, lineWidth: 1)
+                    )
                 .padding(.leading, 10)
                 
                 Button(action: {
-                    // Действие при отправке сообщения
                     sendMessage(inputText: $messageText)
                 }) {
                     Image(systemName: "arrow.right.circle.fill")
@@ -97,8 +87,6 @@ struct ChatDetailView: View {
     }
 }
 
-
-
 #Preview {
-    ChatDetailView(chat: chatData[0])
+    ChatDetailView(chat: Chat.chatData[0])
 }

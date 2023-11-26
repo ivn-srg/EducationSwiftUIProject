@@ -9,7 +9,7 @@ import SwiftUI
 
 struct NearDocListView: View {
     @State private var isModalPresented = false
-    @State private var selectedDoctor: Doctor = listOfDoctors[0]
+    @State private var selectedDoctor: Doctor = Doctor.listOfDoctors[0]
     
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
@@ -19,8 +19,8 @@ struct NearDocListView: View {
                 )
                 .foregroundColor(Color.black)
             
-            ForEach(listOfDoctors.indices, id: \.self) { index in
-                let doc = listOfDoctors[index]
+            ForEach(Doctor.listOfDoctors.indices, id: \.self) { index in
+                let doc = Doctor.listOfDoctors[index]
                 VStack {
                     VStack(alignment: .center, spacing: 20) {
                         MainDocInfo(
@@ -56,7 +56,6 @@ struct NearDocListView: View {
                 }
                 .frame(alignment: .top)
                 .cornerRadius(12)
-//                .shadow(radius: 1)
                 .shadow(color: Color.black.opacity(0.04), radius: 10, x: 2, y: 12)
             }
         }

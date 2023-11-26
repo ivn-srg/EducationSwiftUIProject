@@ -42,7 +42,7 @@ struct ChatRow: View {
 
 #Preview {
     ChatRow(chat: Chat(
-        doctor: listOfDoctors[2],
+        doctor: Doctor.listOfDoctors[2],
         listOfComments: [
             Comment(
                 text: NSLocalizedString("chatMessage6", comment: ""),

@@ -32,4 +32,28 @@ class Doctor: Identifiable {
         self.workTime = workTime
         self.isGeneralDoc = isGeneralDoc
     }
+    
+    static var listOfDoctors = [
+        Doctor(
+            fullName: NSLocalizedString("docName2", comment: ""),
+            specilty: NSLocalizedString("docSpecilty2", comment: ""),
+            avatarImage: .docAvatar2Image,
+            phone: URL(string: "+79239999999"),
+            distance: NSLocalizedString("docDistance2", comment: ""),
+            reviews: NSLocalizedString("docReview2", comment: ""),
+            workDate: NSLocalizedString("generalDocWorkDate", comment: ""),
+            workTime: NSLocalizedString("docWorktime2", comment: "")
+        ),
+        Doctor(
+            fullName: NSLocalizedString("docName1", comment: ""),
+            specilty: NSLocalizedString("docSpecilty1", comment: ""),
+            avatarImage: .docAvatar1Image,
+            phone: URL(string: "+79999999999"),
+            distance: NSLocalizedString("docDistance1", comment: ""),
+            reviews: NSLocalizedString("docReview1", comment: ""),
+            workDate: NSLocalizedString("generalDocWorkDate", comment: ""),
+            workTime: NSLocalizedString("docWorktime1", comment: ""),
+            isGeneralDoc: true
+        )
+    ]
 }
